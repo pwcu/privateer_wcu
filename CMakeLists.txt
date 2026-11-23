@@ -23,7 +23,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.21 FATAL_ERROR)
 
 SET(PWCU_VERSION_MAJOR "0")
-SET(PWCU_VERSION_MINOR "8")
+SET(PWCU_VERSION_MINOR "9")
 SET(PWCU_VERSION_PATCH "0")
 
 # Auto-populate with the git hash of the build
@@ -171,7 +171,7 @@ IF (CMAKE_SYSTEM_NAME STREQUAL Windows)
     SET(CPACK_NSIS_CONTACT "maintainers@vega-strike.org")
     SET(CPACK_NSIS_MODIFY_PATH OFF)
     SET(CPACK_NSIS_CREATE_ICONS_EXTRA
-        "CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\Privateer Wing Commander Universe.lnk' 'C:\\\\Program Files\\\\VegaStrike-0.8\\\\bin\\\\vegastrike-engine.exe' -D\"$INSTDIR\\share\\pwcu\""
+        "CreateShortCut '$SMPROGRAMS\\\\$STARTMENU_FOLDER\\\\Privateer Wing Commander Universe.lnk' 'C:\\\\Program Files\\\\VegaStrike-0.9\\\\bin\\\\vegastrike-engine.exe' -D\"$INSTDIR\\share\\pwcu\""
     )
     SET(CPACK_NSIS_DELETE_ICONS_EXTRA
         "Delete '$SMPROGRAMS\\\\$START_MENU\\\\Privateer Wing Commander Universe.lnk'"
