@@ -54,6 +54,8 @@ engine can be found here:
 
   The Priv:WCU codebase has been ported to py3. Python-3.4 and up is
 supported since the 0.8.x branch of the Vega-Strike-Engine-Source project.
+The codebase is currently targeting compatibility with the 0.9.x branch
+of the engine.
   
   Python-2.7 is no longer supported.
 
