@@ -1,0 +1,69 @@
+name: Windows-Release
+permissions:
+  contents: write
+  pull-requests: read
+
+on:
+  release:
+    types:
+      - created
+      - edited
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-2022
+            is-release: 1
+            install-nsis: 0
+          - os: windows-2025
+            is-release: 1
+            install-nsis: 1
+
+    env:
+      TAG_NAME: '${{ github.ref_name }}'
+
+    steps:
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 #v9.0.0
+        with:
+          script: |
+            const git_sha = context.sha.substring(0, 7)
+            core.exportVariable('ACTIONS_RUNTIME_TOKEN', process.env.ACTIONS_RUNTIME_TOKEN || '');
+            core.exportVariable('SHORT_SHA', git_sha);
+
+      - name: Test tag name and short SHA
+        run: |
+          echo "${TAG_NAME}"
+          echo "${SHORT_SHA}"
+
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install CMake
+        uses: lukka/get-cmake@f86dd60acae0d132056913e248bdabf0e0580b7a #v4.4.5
+
+      - name: Install NSIS
+        if: ${{ matrix.install-nsis }}
+        uses: repolevedavaj/install-nsis@65a75ea79c3d1ddde868e98b7f9447e2e623401c # v1.3.0
+        with:
+          nsis-version: '3.12'
+
+      - name: Build the code
+        run: script/build.ps1
+
+      - name: Package the code
+        run: script/package.ps1
+
+      - name: Upload the artifacts
+        uses: softprops/action-gh-release@8a0cd651e5b2365bd640854a3fa5dfc70e4875f3 # v3.0.4
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: "packages/*.*"

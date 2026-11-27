@@ -1,0 +1,21 @@
+#!/bin/bash
+#====================================
+# @file   : clean
+# @brief  : clean PWCU build dirs and files
+# @usage  : script/clean
+# @param  : none
+#====================================
+set +e
+
+ROOT_DIR=$(pwd)
+BUILD_DIR=$ROOT_DIR/build
+PACKAGE_DIR=$ROOT_DIR/packages
+
+echo "deleting build directory ($BUILD_DIR)"
+rm -rf "$BUILD_DIR"
+rm -rf "$PACKAGE_DIR"
+
+echo "deleting compiled python files (*.pyc)"
+find . -name "*.pyc" -delete
+
+echo "clean done!"

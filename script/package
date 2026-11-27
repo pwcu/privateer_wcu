@@ -1,0 +1,110 @@
+#!/bin/bash
+#====================================
+# @file: package
+# @brief package up PWCU
+# @usage  : script/package
+# @param  : none
+#====================================
+echo "----------------------------"
+echo "--- package | $(date +%Y-%m-%d) ---"
+echo "----------------------------"
+
+ROOT_DIR=$(pwd)
+BUILD_DIR=$ROOT_DIR/build
+PACKAGE_DIR=$ROOT_DIR/packages
+
+function copyDebFiles()
+{
+    local DEB_FILES=`ls *.deb 2>/dev/null || true`
+    if [[ ${#DEB_FILES} -gt 0 ]]; then
+        for DEB_FILE in ${DEB_FILES}
+        do
+            echo "Copying ${DEB_FILE} to ${PACKAGE_DIR}"
+            cp "${DEB_FILE}" "${PACKAGE_DIR}"
+        done
+    else
+        echo "No Debian Package files"
+    fi
+}
+
+function copyRpmFiles()
+{
+    local RPM_FILES=`ls *.rpm *.srpm 2>/dev/null || true`
+    if [[ ${#RPM_FILES} -gt 0 ]]; then
+        for RPM_FILE in ${RPM_FILES}
+        do
+            echo "Copying ${RPM_FILE} to ${PACKAGE_DIR}"
+            cp "${RPM_FILE}" "${PACKAGE_DIR}"
+        done
+    else
+        echo "No RPM Package files"
+    fi
+}
+
+function copyTarballs()
+{
+    local TAR_FILES=`ls *.tar.* 2>/dev/null || true`
+    if [[ ${#TAR_FILES} -gt 0 ]]; then
+        for TAR_FILE in ${TAR_FILES}
+        do
+            echo "Copying ${TAR_FILE} to ${PACKAGE_DIR}"
+            cp "${TAR_FILE}" "${PACKAGE_DIR}"
+        done
+    else
+        echo "No Tarball Package files"
+    fi
+}
+
+function copyFiles()
+{
+    mkdir -p "${PACKAGE_DIR}"
+    copyDebFiles
+    copyRpmFiles
+    copyTarballs
+}
+
+function buildPackages()
+{
+    try_count=0
+    success=0
+
+    while [ $success -ne 1 ] && [ $try_count -lt 8 ]; do
+        if make package
+        then
+            success=1
+            break
+        fi
+        try_count=$(( $try_count + 1 ))
+        echo "'make package' failed (attempt ${try_count}). Retrying..."
+        sleep 1
+    done
+
+    if [ $success -ne 1 ]; then
+        echo "FATAL: 'make package' FAILED!"
+        exit 1
+    fi
+
+    try_count=0
+    success=0
+
+    while [ $success -ne 1 ] && [ $try_count -lt 8 ]; do
+        if make package_source
+        then
+            success=1
+            break
+        fi
+        try_count=$(( $try_count + 1 ))
+        echo "'make package_source' failed (attempt ${try_count}). Retrying..."
+        sleep 1
+    done
+
+    if [ $success -ne 1 ]; then
+        echo "FATAL: 'make package_source' FAILED!"
+        exit 1
+    fi
+}
+
+cd "$BUILD_DIR" || exit 2
+buildPackages
+copyFiles
+cd "$ROOT_DIR" || exit 2
