@@ -293,10 +293,10 @@ class ShipFactionPair(Argument):
             self.warn("'%s' does not have a length of 2" % (str(self.value)))
             return False
         if self.value[0] not in faction_ships.stattable:
-            self.warn("'%s' is not a valid shiptype" % (str(self.value[0]))
+            self.warn("'%s' is not a valid shiptype" % (str(self.value[0])))
             return False
         if self.value[1] not in VS._factions:
-            self.warn("'%s' is not a valid faction" % (str(self.value[1]))
+            self.warn("'%s' is not a valid faction" % (str(self.value[1])))
             return False
         return True
 
