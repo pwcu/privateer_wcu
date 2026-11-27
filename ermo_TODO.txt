@@ -1,3 +1,17 @@
+# GitHub Tracking
+Main Tracking Issue: https://github.com/pwcu/privateer_wcu/issues/19
+
+Subtasks:
+ - Combat Balance & Upgrades: https://github.com/pwcu/privateer_wcu/issues/21
+ - AI & Wingmen Discipline: https://github.com/pwcu/privateer_wcu/issues/22
+ - UI & Map Enhancements: https://github.com/pwcu/privateer_wcu/issues/23
+ - Economy & Terminal QoL: https://github.com/pwcu/privateer_wcu/issues/24
+ - Save Game Management: https://github.com/pwcu/privateer_wcu/issues/25
+ - HUD & Ship Model Visual Bugs: https://github.com/pwcu/privateer_wcu/issues/26
+ - Environment & Asset Polish: https://github.com/pwcu/privateer_wcu/issues/27
+
+---
+
 # Goals
 
 The overarching goal is two-fold:
@@ -32,7 +46,7 @@ gets to set the standard -- at least initially.
 Personally, I support not deleting anything (extra campaign missions,
 non-canon ship variants) right away.
 
-### Observations on PU r505:
+### Observations on PU r505 (Tracked in #19, #21-#25, #27):
 
  * PU is not super well balanced currently. Anything more than 2
    opposing ships can be a challenge due to funky ship upgrade
@@ -75,7 +89,7 @@ non-canon ship variants) right away.
     upgrade logic ASAP
  * It's tedious to sell missiles -- create Buy/Sell 1, 5 and 10 buttons?
 
-Bug notes:
+Bug notes (Tracked in #19, #26, #27):
  * Tarsus model is missing gun models? Is this a model issue (missing mount points)?
  * Tarsus hud model does not show up at the ship dealer?
  * Why are there no enemy shield indicators on the hud when flying?!
