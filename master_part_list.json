@@ -1,0 +1,1186 @@
+[
+    {
+        "file": "cloaking_device",
+        "categoryname": "upgrades/Deprecated",
+        "price": "259000",
+        "mass": "8.9",
+        "volume": "1",
+        "description": "@upgrades/shield_regenerator.png@<u/Miscellaneous>This device uses gravity manipulation technology. A powerful gravitational lens bends the radiation emitted by active sensors around the ship. This renders the vehicle completely invisible to both active and passive sensor"
+    },
+    {
+        "file": "shield_4_Level1",
+        "categoryname": "upgrades/Shield_Systems/Light",
+        "price": "10000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/shields.png@<u/Shield_systems>A combination of magnetic and gravitic protective shields. 4 emitter model."
+    },
+    {
+        "file": "shield_4_Level2",
+        "categoryname": "upgrades/Shield_Systems/Light",
+        "price": "30000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/shields.png@<u/Shield_systems>A combination of magnetic and gravitic protective shields. 4 emitter model."
+    },
+    {
+        "file": "shield_4_Level3",
+        "categoryname": "upgrades/Shield_Systems/Medium",
+        "price": "50000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/shields.png@<u/Shield_systems>A combination of magnetic and gravitic protective shields. 4 emitter model."
+    },
+    {
+        "file": "shield_4_Level4",
+        "categoryname": "upgrades/Shield_Systems/Medium",
+        "price": "100000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/shields.png@<u/Shield_systems>A combination of magnetic and gravitic protective shields. 4 emitter model."
+    },
+    {
+        "file": "shield_4_Level5",
+        "categoryname": "upgrades/Shield_Systems/Heavy",
+        "price": "150000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/shields.png@<u/Shields>A combination of magnetic and gravitic protective shields. 4 emitter model."
+    },
+    {
+        "file": "reactor_level_0",
+        "categoryname": "upgrades/Reactors/Light",
+        "price": "4000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/engine1.png@<u/Reactors>Standard light reactor (level 0)."
+    },
+    {
+        "file": "reactor_level_1",
+        "categoryname": "upgrades/Reactors/Light",
+        "price": "10000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/engine1.png@<u/Reactors>Standard light reactor (level 1)."
+    },
+    {
+        "file": "reactor_level_2",
+        "categoryname": "upgrades/Reactors/Light",
+        "price": "30000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/engine2.png@<u/Reactors>Standard light reactor (level 2)."
+    },
+    {
+        "file": "reactor_level_3",
+        "categoryname": "upgrades/Reactors/Medium",
+        "price": "60000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/engine3.png@<u/Reactors>Standard medium reactor (level 3)."
+    },
+    {
+        "file": "reactor_level_4",
+        "categoryname": "upgrades/Reactors/Medium",
+        "price": "100000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/engine3.png@<u/Reactors>Standard medium reactor (level 4)."
+    },
+    {
+        "file": "reactor_level_5",
+        "categoryname": "upgrades/Reactors/Heavy",
+        "price": "150000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/engine5.png@<u/Reactors>Standard heavy reactor (level 5)."
+    },
+    {
+        "file": "mult_turn_jet_enhancer",
+        "categoryname": "upgrades/Engines/Engine_Enhancements_Medium",
+        "price": "40000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/thrustenhancer.png@<u/Engines>The addition of more vectored thrusting units in the extremes of the ship enhances turning."
+    },
+    {
+        "file": "mult_thrust_enhancer",
+        "categoryname": "upgrades/Engines/Engine_Enhancements_Medium",
+        "price": "60000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/thrustenhancer.png@<u/Engines>Playing out the tolerances on the inertial compensator allows for improved acceleration."
+    },
+    {
+        "file": "add_cargo_volume",
+        "categoryname": "upgrades/Miscellaneous",
+        "price": "10000",
+        "mass": "40",
+        "volume": "1",
+        "description": "@upgrades/cargo_expansion.png@<u/Miscellaneous>Volume: varies by ship. Not every ship can support an internal cargo expansion, and they interfere with the inertial compensators, but these tend to pay for themselves quickly with the additional profits gained from all that extra cargo."
+    },
+    {
+        "file": "afterburner",
+        "categoryname": "upgrades/Engines/Engine_Enhancements_Medium",
+        "price": "9000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/afterburner.png@<u/Engines>Afterburners more than double your speed and can mean the difference between life and death in asteroid fields and combat. As they are relatively inexpensive, I highly recommend buying afterburners, especially if you are flying older ships."
+    },
+    {
+        "file": "tractor_beam",
+        "categoryname": "upgrades/Weapons/Beam_Arrays_Light",
+        "price": "7500",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/tractor.png@<u/Miscellaneous>A tractor beam is the key to efficient salvage. Cargo is usually found after a battle, waiting for collection. Items collected are automatically added to your manifest."
+    },
+    {
+        "file": "laser",
+        "categoryname": "upgrades/Weapons/Mounted_Guns_Light",
+        "price": "1000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/laser.png@<u/Guns>Though not a laser by any stretch of the imagination, due to its resemblance to the so called 'lasers' of classic games and movies of the previous millenniums, the misnomer has stuck stronger than space rated epoxy. Cheap and utterly dependable."
+    },
+    {
+        "file": "steltek_gun",
+        "categoryname": "upgrades/Weapons/Alien",
+        "price": "0",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/fusion.png@<u/Guns>Weapon of unknown alien origin."
+    },
+    {
+        "file": "steltek_gun_boosted",
+        "categoryname": "upgrades/Weapons/Alien",
+        "price": "0",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/fusion.png@<u/Guns>Weapon of unknown alien origin, emitting intense radiations."
+    },
+    {
+        "file": "steltek_gun_mass",
+        "categoryname": "upgrades/Weapons/Alien",
+        "price": "0",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/fusion.png@<u/Guns>Cluster of weapons of unknown alien origin."
+    },
+    {
+        "file": "meson_blaster",
+        "categoryname": "upgrades/Weapons/Mounted_Guns_Light",
+        "price": "2500",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/meson.png@<u/Guns>The meson blaster fires pulses of highly unstable quark-antiquark pairs. These extremely reactive conglomerations are destroyed upon impact, scattering the resulting individual particles to interact with the target at a sub-atomic level."
+    },
+    {
+        "file": "mass_driver",
+        "categoryname": "upgrades/Weapons/Mounted_Guns_Light",
+        "price": "1500",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/massdriver.png@<u/Guns>Long before the dawn of modern man, it was known to various hominids that hurling a blunt object was a reasonable way to deliver damage from a distance. This is basically what the mass driver does, only with even less interesting projectiles."
+    },
+    {
+        "file": "neutron_gun",
+        "categoryname": "upgrades/Weapons/Mounted_Guns_Medium",
+        "price": "5000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/neutron.png@<u/Guns>Neutron Gun: Bombard any atom with enough neutrons and you'll get a heavy, radioactive isotope that tends to spontaneously decay. Bombard a bunch of atoms with a bunch of neutrons and it will only be a question of time before you you can force entire ships and stations to spontaneously decay."
+    },
+    {
+        "file": "particle_cannon",
+        "categoryname": "upgrades/Weapons/Mounted_Guns_Medium",
+        "price": "10000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/particle.png@<u/Guns>The particle cannon fires bundles of hyper-accelerated particles at targets. This works better than it sounds, though not by much."
+    },
+    {
+        "file": "ion",
+        "categoryname": "upgrades/Weapons/Mounted_Guns_Heavy",
+        "price": "40000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/ion.png@<u/Guns>Anyone familiar with the laborious reaction equations of introductory chemistry should be able to appreciate the ion pulse cannon: it fires salvos of highly charged anions that strip molecules from the hull of their target, turning chunks of it into clouds of bonded, inert particles. Keep shooting and soon the whole target turns into clouds of space dust."
+    },
+    {
+        "file": "plasma_gun",
+        "categoryname": "upgrades/Weapons/Mounted_Guns_Heavy",
+        "price": "80000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/plasma.png@<u/Guns>Plasma guns use induced magnetic containment to fire globs of superheated plasma at enemies. No screwing around with exotic sub-atomic particles here: these weapons just burn and abrade their way through anything in your crosshair."
+    },
+    {
+        "file": "tachyon_cannon",
+        "categoryname": "upgrades/Weapons/Mounted_Guns_Confed_Milspec",
+        "price": "20000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/tachyon.png@<u/Guns>Tachyons have interesting properties, like negative mass, increasing energy at decreasing velocities, and a mathematically imaginary relationship to the passage of time. We shouldn't have to tell you that anything this weird doesn't react too well with the hull of spaceships."
+    },
+    {
+        "file": "tractor_capability",
+        "categoryname": "upgrades/Weapons/Mount_Enhancements",
+        "price": "50000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/tractor.png@<u/Miscellaneous>On ships where space is at a premium, there might not be a dedicated tractor mount available. Fortunately, this upgrade can alter any hardpoint so it is compatible with a tractor array."
+    },
+    {
+        "file": "autotracking",
+        "categoryname": "upgrades/Weapons/Mount_Enhancements",
+        "price": "100000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/gun_cooler.png@<u/Miscellaneous>While all mounted weapons support auto-tracking capabilities, these are not usually available through civilian mounts. A fully-powered military auto-tracker like this greatly enhances weapon accuracy."
+    },
+    {
+        "file": "plasteel",
+        "categoryname": "upgrades/Armor",
+        "price": "1000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/plasteel.png@<u/Armor>Protective equivalent: 10cm durasteel. Plasteel is the least expensive armor and protects one from the equivalent of four direct laser hits."
+    },
+    {
+        "file": "tungsten",
+        "categoryname": "upgrades/Armor",
+        "price": "1500",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/tungsten.png@<u/Armor>Protective equivalent: 20 cm durasteel. Tungsten armor may cost a little more but can stop up to two torpedoes. Couriers in Potter Quadrant working for bureaucrats probably don't need this level of protection. On the other hand, those of a more dangerous occupation might appreciate the precious extra few seconds this might buy."
+    },
+    {
+        "file": "basic_armor",
+        "categoryname": "upgrades/Armor_Modification",
+        "price": "500",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "<u/Armor>A basic armor fitted to all ships."
+    },
+    {
+        "file": "plasteel_hull",
+        "categoryname": "upgrades/Hull",
+        "price": "2000",
+        "mass": "10",
+        "volume": "0",
+        "description": "@upgrades/plasteel.png@<u/Hull>Plasteel is is a cheap and cost-effective solution for hull."
+    },
+    {
+        "file": "tungsten_hull",
+        "categoryname": "upgrades/Hull",
+        "price": "3000",
+        "mass": "10",
+        "volume": "0",
+        "description": "@upgrades/tungsten.png@<u/Hull>Dense, and with a high melting temperature, tungsten based hull is crude, but not ineffective."
+    },
+    {
+        "file": "add_ablative_hull_coating",
+        "categoryname": "upgrades/Hull_Upgrades",
+        "price": "12000",
+        "mass": "10",
+        "volume": "0",
+        "description": "@upgrades/isometal.png@<u/Hull>Specifically designed to disperse and dissipate heat, this special hull coating will reduce the damage done by energy based weapons or explosions. Also helps staying cool during atmospheric reentry."
+    },
+    {
+        "file": "add_sublimative_hull_coating",
+        "categoryname": "upgrades/Hull_Upgrades",
+        "price": "15000",
+        "mass": "15",
+        "volume": "1",
+        "description": "@upgrades/isometal.png@<u/Hull>Through the alignment of microscopic crystals inside the hull, it becomes possible to amplify and direct focused electromagnetic waves towards incoming matter in order to convert its kinetic energy into heat. This forces the incoming matter to sublimate while slowing down, allowing the ship to scoop up the resulting decelerated and therefore harmless gas."
+    },
+    {
+        "file": "ecm_package_1",
+        "categoryname": "upgrades/ECM_Systems",
+        "price": "5000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/ecm1.png@<u/ECM_Systems>Electronic CounterMeasures or ECM refers to a broad spectrum of techniques designed to defeat or spoof enemy sensors and communications. The basic version detects hostile objects and launches decoys to try and confuse it."
+    },
+    {
+        "file": "ecm_package_2",
+        "categoryname": "upgrades/ECM_Systems",
+        "price": "15000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/ecm2.png@<u/ECM_Systems>Electronic CounterMeasures or ECM refers to a broad spectrum of techniques designed to defeat or spoof enemy sensors and communications. This more advanced version adds specially tailored electromagnetic signals and pulses that aim to confuse sensors and disrupt guiding circuits."
+    },
+    {
+        "file": "ecm_package_3",
+        "categoryname": "upgrades/ECM_Systems",
+        "price": "30000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/ecm3.png@<u/ECM_Systems>Electronic CounterMeasures or ECM refers to a broad spectrum of techniques designed to defeat or spoof enemy sensors and communications. This very advanced version adds optical trickery, heat masking and projecting fake engine signatures away from the ship."
+    },
+    {
+        "file": "repair_system",
+        "categoryname": "upgrades/Repair_Systems",
+        "price": "10000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/repair_droid.png@<u/Repair_Systems>A distributed network of local damage control units, a repair system can isolate failing modules, minimize continuing damage and restore some failing functionality."
+    },
+    {
+        "file": "repair_system_advanced",
+        "categoryname": "upgrades/Repair_Systems",
+        "price": "20000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/advanced_repair_droid.png@<u/Repair_Systems>By increasing the redundancy of the repair system, more of the local nodes are more likely to survive damage to their area, and thus be of use in repairing it."
+    },
+    {
+        "file": "repair_droid",
+        "categoryname": "upgrades/Repair_Systems/Advanced",
+        "price": "30000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/repair_droid.png@<u/Repair_Systems>A collaborating network of subunits that can do in-flight repairs."
+    },
+    {
+        "file": "repair_droid_advanced",
+        "categoryname": "upgrades/Repair_Systems/Advanced",
+        "price": "90000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/advanced_repair_droid.png@<u/Repair_Systems>Sturdy enough to do repairs during combat. Smart enough to remember not to wash the main computer."
+    },
+    {
+        "file": "repair_ai",
+        "categoryname": "upgrades/Repair_Systems/Research",
+        "price": "200000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/advanced_repair_droid.png@<u/Repair_Systems>Sometimes, prioritizing what gets repaired is as important as getting things repaired."
+    },
+    {
+        "file": "repair_ai_advanced",
+        "categoryname": "upgrades/Repair_Systems/Research",
+        "price": "300000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/advanced_repair_droid.png@<u/Repair_Systems>Similar to the normal repair ai, but with code optimizations and a better warranty."
+    },
+    {
+        "file": "iris_mk1",
+        "categoryname": "upgrades/Radar/Basic",
+        "price": "10000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/irismk1.png@<u/Radar>Iris Systems has cornered the budget sensor market in Gemini, and their bottom-price sensors have a reputation for starting the careers of young pilots. Unfortunately, their sensors' lack of a working friend-or-foe ID system is a liability."
+    },
+    {
+        "file": "iris_mk2",
+        "categoryname": "upgrades/Radar/Intermediate",
+        "price": "30000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/irismk2.png@<u/Radar>Iris Systems has cornered the budget sensor market in Gemini, and their bottom-price sensors have a reputation for starting the careers of young pilots. Unfortunately, their sensors' lack of a working friend-or-foe ID system is a liability. This intermediate model offers a longer tracking range."
+    },
+    {
+        "file": "iris_mk3",
+        "categoryname": "upgrades/Radar/Advanced",
+        "price": "60000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/irismk3.png@<u/Radar>Iris Systems has cornered the budget sensor market in Gemini, and their bottom-price sensors have a reputation for starting the careers of young pilots. Unfortunately, their sensors' lack of a working friend-or-foe ID system is a liability. This advanced model offers an even longer tracking range and supports Intelligent Target Tracking System."
+    },
+    {
+        "file": "hunter_aw_6",
+        "categoryname": "upgrades/Radar/Basic",
+        "price": "30000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/hunteraw6.png@<u/Radar>Hunter AW makes all sorts of bounty hunter equipment, and every last unit is a no-frills masterpiece of function. Hunter's sensors tell bounty hunters exactly what they need to know: who needs killing and who's just collateral damage."
+    },
+    {
+        "file": "hunter_aw_6i",
+        "categoryname": "upgrades/Radar/Intermediate",
+        "price": "50000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/hunteraw6i.png@<u/Radar>Hunter AW makes all sorts of bounty hunter equipment, and every last unit is a no-frills masterpiece of function. Hunter's sensors tell bounty hunters exactly what they need to know: who needs killing and who's just collateral damage. This intermediate model offers a longer tracking range."
+    },
+    {
+        "file": "hunter_aw_infinity",
+        "categoryname": "upgrades/Radar/Advanced",
+        "price": "80000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/hunterawinfinity.png@<u/Radar>Hunter AW makes all sorts of bounty hunter equipment, and every last unit is a no-frills masterpiece of function. Hunter's sensors tell bounty hunters exactly what they need to know: who needs killing and who's just collateral damage. This advanced model offers an even longer tracking range and supports Intelligent Target Tracking System."
+    },
+    {
+        "file": "B_and_S_Tripwire",
+        "categoryname": "upgrades/Radar/Basic",
+        "price": "40000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/bandstripwire.png@<u/Radar>B&S has an excellent reputation as a refurbisher of obsolete military sensor equipment, and while it may be somewhat odious that the best sensors in Gemini are scrounged from rusting Confederation war relics, they are still the best models publicly available, featuring complete friend-or-foe recognition."
+    },
+    {
+        "file": "B_and_S_EYE",
+        "categoryname": "upgrades/Radar/Intermediate",
+        "price": "70000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/bandseye.png@<u/Radar>B&S has an excellent reputation as a refurbisher of obsolete military sensor equipment, and while it may be somewhat odious that the best sensors in Gemini are scrounged from rusting Confederation war relics, they are still the best models publicly available, featuring complete friend-or-foe recognition. This intermediate model offers a longer tracking range."
+    },
+    {
+        "file": "B_and_S_Omni",
+        "categoryname": "upgrades/Radar/Advanced",
+        "price": "100000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/bandsomni.png@<u/Radar>B&S has an excellent reputation as a refurbisher of obsolete military sensor equipment, and while it may be somewhat odious that the best sensors in Gemini are scrounged from rusting Confederation war relics, they are still the best models publicly available, featuring complete friend-or-foe recognition. This advanced model offers an even longer tracking range and supports Intelligent Target Tracking System."
+    },
+    {
+        "file": "jump_drive",
+        "categoryname": "upgrades/Miscellaneous",
+        "price": "10000",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/jumpdrive.png@<u/Miscellaneous>This is undoubtedly one of your most important and expensive purchases. Unfortunately one manufacturer essentially has a monopoly on jump drives (A common problem with many frontier products).  The jump drive is your ticket to interstellar space."
+    },
+    {
+        "file": "dumbfire_ammo",
+        "categoryname": "upgrades/Ammunition",
+        "price": "20",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/dumbfire.png@<u/Munitions>Cheap and easily mass-produced, dumbfire missiles offer the most bang for your buck. They are a common sight in the backwaters, where natural talent and eye-hand coordination makes up for the scarcity of missile guidance components."
+    },
+    {
+        "file": "proton_torpedo_ammo",
+        "categoryname": "upgrades/Ammunition",
+        "price": "15",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/proton_torpedo.png@<u/Munitions>Gemini's proton torpedoes have about as much in common with confederation-issue ship killers as a Clydesdale has with a Kamekh. These are potent, unidirectional bombs: no time-consuming target lock required."
+    },
+    {
+        "file": "heatseeker_ammo",
+        "categoryname": "upgrades/Ammunition",
+        "price": "35",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/heat_seeker.png@<u/Munitions>Heat seekers have a simple tracking mechanism. Insofar as it makes for quick missile locks and leaves more space for payload, this is good, but the same crude design makes the HS missile easy to divert."
+    },
+    {
+        "file": "image_recognition_ammo",
+        "categoryname": "upgrades/Ammunition",
+        "price": "75",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/image_recognition.png@<u/Munitions>IR missiles are very effective, but they lock onto their targets by structural design, and for this reason you must take care when targeting ships employed by many factions."
+    },
+    {
+        "file": "friend_or_foe_ammo",
+        "categoryname": "upgrades/Ammunition",
+        "price": "100",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@upgrades/friend_or_foe.png@<u/Munitions>As long as your targeting ID system is working properly, the friend or foe missile is a deadly weapon. Though pilots early in their exploits may balk at the prices, veteran dogfighters will attest to the value of these highly effective fire-and-forget type missiles."
+    },
+    {
+        "file": "medium_turret_laser",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "19500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two lasers and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_missile",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "19500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two missile launchers.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_massdriver",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "20500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two mass drivers and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_meson",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "22500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two meson blasters and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_neutron",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "27500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two neutron guns and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_particle",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "37500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two particle cannons and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_ion",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "97500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two ion pulse cannons and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_plasma",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "177500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two plasma guns and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_tachyon",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "57500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two tachyon cannons and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "medium_turret_rear_laser",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "19500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_rear.png@<u/Turrets>Equipped with two lasers and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair. Perfect for the back of your ship."
+    },
+    {
+        "file": "medium_turret_rear_massdriver",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "20500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_rear.png@<u/Turrets>Equipped with two mass drivers and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair. Perfect for the back of your ship."
+    },
+    {
+        "file": "medium_turret_rear_meson",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "22500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_rear.png@<u/Turrets>Equipped with two meson guns and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair. Perfect for the back of your ship."
+    },
+    {
+        "file": "medium_turret_rear_neutron",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "27500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_rear.png@<u/Turrets>Equipped with two neutron guns and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair. Perfect for the back of your ship."
+    },
+    {
+        "file": "medium_turret_rear_particle",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "37500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_rear.png@<u/Turrets>Equipped with two particle cannons and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair. Perfect for the back of your ship."
+    },
+    {
+        "file": "medium_turret_rear_ion",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "57500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_rear.png@<u/Turrets>Equipped with two ion pulse cannons and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair. Perfect for the back of your ship."
+    },
+    {
+        "file": "medium_turret_rear_plasma",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "177500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_rear.png@<u/Turrets>Equipped with two plasma cannons and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair. Perfect for the back of your ship."
+    },
+    {
+        "file": "medium_turret_rear_tachyon",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "57500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_rear.png@<u/Turrets>Equipped with two tachyon cannons and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair. Perfect for the back of your ship."
+    },
+    {
+        "file": "small_turret_neutron",
+        "categoryname": "upgrades/Weapons/Turrets",
+        "price": "27500",
+        "mass": "0.1",
+        "volume": "1",
+        "description": "@upgrades/turret_medium.png@<u/Turrets>Equipped with two neutron guns and a tractor beam.  It turns, it shoots, it slices. No, it does not dice, but it does come with a free fuzzy pair."
+    },
+    {
+        "file": "First_Class_Passenger",
+        "categoryname": "Passengers",
+        "price": "100",
+        "mass": "0.01",
+        "volume": "20",
+        "description": "@cargo/cargo-hud.png@<Human_Cargo>If you are taking first class passengers around, they had better have all the amenities one expects.",
+        "passenger": true
+    },
+    {
+        "file": "Business_Class_Passenger",
+        "categoryname": "Passengers",
+        "price": "75",
+        "mass": "0.01",
+        "volume": "10",
+        "description": "@cargo/cargo-hud.png@<Human_Cargo>With a laptop and a wide rear, the business class passenger enjoys some of the room of the first class passenger.",
+        "passenger": true
+    },
+    {
+        "file": "Frozen_Colonist",
+        "categoryname": "Passengers/Economy",
+        "price": "50",
+        "mass": "1",
+        "volume": "3",
+        "description": "@cargo/cargo-hud.png@<Human_Cargo>Polite, space-efficient, doesn't try to back-seat pilot, doesn't care how long it takes to get there. Unfortunately, being technically, if only temporarily, deceased - not much for conversation.",
+        "passenger": true
+    },
+    {
+        "file": "Hitchhiker",
+        "categoryname": "Passengers/Economy",
+        "price": "42",
+        "mass": "0.4",
+        "volume": "6",
+        "description": "@cargo/cargo-hud.png@<Human_Cargo>Always brings a towel of his/her own.",
+        "passenger": true
+    },
+    {
+        "file": "Grain",
+        "categoryname": "Grain",
+        "price": "13",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/grain.png@<Food>The edible grass seeds, grains, and the carbohydrates garnered from them, are a pillar of an omnivorous diet. When fermented properly, they become the pillars of a liquid diet."
+    },
+    {
+        "file": "Generic_Foods",
+        "categoryname": "Generic_Foods",
+        "price": "20.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/generic-foods.png@<Food>Food! Glorious food! Hot TVP and Soymilk!"
+    },
+    {
+        "file": "Luxury_Foods",
+        "categoryname": "Luxury_Foods",
+        "price": "38",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/luxury-foods.png@<Food>Containing such rarities as actual game meat and imported specialty products, these bundles of luxury items are primarily purchased only by upscale hotels and restaurants."
+    },
+    {
+        "file": "Furs",
+        "categoryname": "Furs",
+        "price": "280.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/furs.png@<Luxury_Goods>Rare furs from nearly extinct beasts still garner a large profit from those willing to pay top dollar.  Fortunately with the onset of widespread test-tube cloning, nearly extinct does not equate to soon extinct any more."
+    },
+    {
+        "file": "Liquor",
+        "categoryname": "Liquor",
+        "price": "40.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/liquor.png@<Luxury_Goods>Beer! (It's what's for dinner.)"
+    },
+    {
+        "file": "Pets",
+        "categoryname": "Pets",
+        "price": "85.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/pets.png@<Luxury_Goods>Lesser species kept as entertainment, often against their will.  Occasionally bonds of affection develop between owner and pet."
+    },
+    {
+        "file": "Wood",
+        "categoryname": "Wood",
+        "price": "83",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/wood.png@<Raw_Materials>While wood is no longer as common a building material for structural aspects, it remains an aesthetic desired by many residents of paved industrial worlds."
+    },
+    {
+        "file": "Gems",
+        "categoryname": "Gems",
+        "price": "950.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/gems.png@<Luxury_Goods>Exceptionally hard, and useful for many industrial purposes, these carbon lattice crystals have long been loved for their gleaming appearance. Even though the differences are no longer perceptible between manufactured and natural diamond"
+    },
+    {
+        "file": "small_asteroid0",
+        "categoryname": "Fragments",
+        "price": "760",
+        "mass": "100",
+        "volume": "10",
+        "description": "@cargo/gems.png@<Ores>A chunk of asteroid. Can be mined for ore if further shot upon."
+    },
+    {
+        "file": "small_asteroid1",
+        "categoryname": "Fragments",
+        "price": "760",
+        "mass": "100",
+        "volume": "10",
+        "description": "@cargo/gems.png@<Ores>A chunk of asteroid. Can be mined for ore if further shot upon."
+    },
+    {
+        "file": "small_asteroid2",
+        "categoryname": "Fragments",
+        "price": "760",
+        "mass": "100",
+        "volume": "10",
+        "description": "@cargo/gems.png@<Ores>A chunk of asteroid. Can be mined for ore if further shot upon."
+    },
+    {
+        "file": "small_asteroid3",
+        "categoryname": "Fragments",
+        "price": "760",
+        "mass": "100",
+        "volume": "10",
+        "description": "@cargo/gems.png@<Ores>A chunk of asteroid. Can be mined for ore if further shot upon."
+    },
+    {
+        "file": "small_asteroid4",
+        "categoryname": "Fragments",
+        "price": "760",
+        "mass": "100",
+        "volume": "10",
+        "description": "@cargo/gems.png@<Ores>A chunk of asteroid. Can be mined for ore if further shot upon."
+    },
+    {
+        "file": "small_asteroid5",
+        "categoryname": "Fragments",
+        "price": "760",
+        "mass": "100",
+        "volume": "10",
+        "description": "@cargo/gems.png@<Ores>A chunk of asteroid. Can be mined for ore if further shot upon."
+    },
+    {
+        "file": "small_asteroid6",
+        "categoryname": "Fragments",
+        "price": "760",
+        "mass": "100",
+        "volume": "10",
+        "description": "@cargo/gems.png@<Ores>A chunk of asteroid. Can be mined for ore if further shot upon."
+    },
+    {
+        "file": "small_asteroid7",
+        "categoryname": "Fragments",
+        "price": "760",
+        "mass": "100",
+        "volume": "10",
+        "description": "@cargo/gems.png@<Ores>A chunk of asteroid. Can be mined for ore if further shot upon."
+    },
+    {
+        "file": "iron_ore",
+        "categoryname": "Fragments",
+        "price": "152",
+        "mass": "0.05",
+        "volume": "2",
+        "description": "@cargo/iron.png@<Ores>Iron has been vital in the histories of all of the spacefaring races. The prime variance is the ratio of cast iron cookware to iron and steel killingware."
+    },
+    {
+        "file": "tungsten_ore",
+        "categoryname": "Fragments",
+        "price": "312",
+        "mass": "0.05",
+        "volume": "2",
+        "description": "@cargo/tungsten.png@<Ores>Due to its exceptional melting temperature and continued tensile strength at high temperatures, tungsten is a vital part of the spacefaring industry."
+    },
+    {
+        "file": "Iron",
+        "categoryname": "Iron",
+        "price": "38",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/iron.png@<Raw_Materials>Iron has been vital in the histories of all of the spacefaring races. The prime variance is the ratio of cast iron cookware to iron and steel killingware."
+    },
+    {
+        "file": "Tungsten",
+        "categoryname": "Tungsten",
+        "price": "78",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/tungsten.png@<Raw_Materials>Due to its exceptional melting temperature and continued tensile strength at high temperatures, tungsten is a vital part of the spacefaring industry."
+    },
+    {
+        "file": "Plutonium",
+        "categoryname": "Plutonium",
+        "price": "975.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/plutonium.png@<Raw_Materials>A wonderful ingredient for glowing paints."
+    },
+    {
+        "file": "Uranium",
+        "categoryname": "Uranium",
+        "price": "450.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/uranium.png@<Raw_Materials>A rather common radioactive used primarily in fission piles. The depleted isotopes are used in kinetic impact weapons."
+    },
+    {
+        "file": "Artwork",
+        "categoryname": "Artwork",
+        "price": "90.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/artwork.png@<Luxury_Goods>Wonderfully handcrafted with near-forgotten techniques and wondrously copied with exceptionally well known ones. 'Dogs playing poker', 'Kilrathi plays it by trust', and replicas of mid 21st century CE Terran plastic food storage unit"
+    },
+    {
+        "file": "Games",
+        "categoryname": "Games",
+        "price": "18",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/games.png@<Luxury_Goods>Providing near endless possibility for gameplay and maximizing entertainment return, interactive computer games are a market fueled by the hard labors of underfunded dreamers. Despite their lack of fiscal resources they still manage to"
+    },
+    {
+        "file": "Movies",
+        "categoryname": "Movies",
+        "price": "18",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/movies.png@<Luxury_Goods>Mindless entertainment for the masses. Especially popular among those with no noticeable social life. This year's top seller on the Confederation frontier: 'Who's your Tomcat?: Interspecies Fantasies XXIV'."
+    },
+    {
+        "file": "Advanced_Fuels",
+        "categoryname": "Advanced_Fuels",
+        "price": "480.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/advanced-fuels.png@<Processed_Goods>Premium pro-clean fighter jet fuel."
+    },
+    {
+        "file": "Communications",
+        "categoryname": "Communications",
+        "price": "43",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/communications.png@<Processed_Goods>Getting a message through a jump wormhole requires specialized, precise electronics that need to be mounted on a fixed platform in space. Currently mobile craft cannot equip these wonders of information and communication theory."
+    },
+    {
+        "file": "Computers",
+        "categoryname": "Computers",
+        "price": "65.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/computers.png@<Microelectronics>Featuring massive parallelism and minute feature size, a top of the line number cruncher can analyze more useless facts about its user in a second than most users desire to know in a lifetime."
+    },
+    {
+        "file": "Construction",
+        "categoryname": "Construction",
+        "price": "85.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/mining-equipment.png@<Capital_Goods>The main driving force behind capitalistic economies, constant construction leaves in its wake a slowly accumulating mass of superfluous structures."
+    },
+    {
+        "file": "Factory_Equipment",
+        "categoryname": "Factory_Equipment",
+        "price": "85.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/factory-equipment.png@<Capital_Goods>Laser etching and autonomous 3d printing utilities help fabricate any number of consumer goods."
+    },
+    {
+        "file": "Food_Dispensers",
+        "categoryname": "Food_Dispensers",
+        "price": "85.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/food-dispensers.png@<Processed_Goods>When extensive preparation of meals is not an option, or gravity fields are not available, food dispensers offer an alternative to the local fast food joints for a surprisingly nutritious meal. Available in Soy and Beef flavor."
+    },
+    {
+        "file": "Holographics",
+        "categoryname": "Holographics",
+        "price": "480.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/holographics.png@<Microelectronics>Flatscreen holodisplays were a luxury, but have turned into a commodity with the demise of larger yet cost effective Cathode Light Field displays."
+    },
+    {
+        "file": "Home_Appliances",
+        "categoryname": "Home_Appliances",
+        "price": "80.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/home-appliances.png@<Processed_Goods>From the esoteric hover-masseuse to the ubiquitous InstaNuker, these are the champions of eternal consumerism."
+    },
+    {
+        "file": "Home_Entertainment",
+        "categoryname": "Home_Entertainment",
+        "price": "40.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/home-entertainment.png@<Microelectronics>Why live your dreams when you can watch actors and sports stars live theirs?  For when you want to be entertained without having to think."
+    },
+    {
+        "file": "Medical_Equipment",
+        "categoryname": "Medical_Equipment",
+        "price": "480.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/medical-equipment.png@<Microelectronics>While the contents have changed countless times, these kits can be found in every public transport and in every overprotective mother's travel bags."
+    },
+    {
+        "file": "Mining_Equipment",
+        "categoryname": "Mining_Equipment",
+        "price": "85.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/mining-equipment.png@<Capital_Goods>Laser drills and hyper-bores lay the foundation for drilling tools. Construction of mine shafts has never been so easy. Just let a few of these know where you want the tunnels, and come back a few days later to find huge mountains of gravel and said tunnels."
+    },
+    {
+        "file": "Plastics",
+        "categoryname": "Plastics",
+        "price": "35.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/plastics.png@<Raw_Materials>As nearly all human civilian products rely on hydrocarbon polymers, were there not a massive recycling program, humanity would have drowned under its own refuse."
+    },
+    {
+        "file": "Pre_Fabs",
+        "categoryname": "Pre_Fabs",
+        "price": "40.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/pre-fabs.png@<Processed_Goods>Unless one is absurdly wealthy, one lives in a building made out of modular components just like these."
+    },
+    {
+        "file": "Robot_Servants",
+        "categoryname": "Robot_Servants",
+        "price": "480.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/robot-servants.png@<Processed_Goods>Having the abilities of a simple-minded bodyservant and portable data storage unit, these machines are valued accessories for those too poor or too ethical to use human servants."
+    },
+    {
+        "file": "Robot_Workers",
+        "categoryname": "Robot_Workers",
+        "price": "285.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/robot-workers.png@<Capital_Goods>Tireless laborers that will attempt to do nearly anything you can convey to them as their task. Unfortunately, in order to keep costs down, their ability to understand exactly what it is you were trying to convey is somewhat limited."
+    },
+    {
+        "file": "Software",
+        "categoryname": "Software",
+        "price": "85.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/software.png@<Microelectronics>DeCSS: The ever so polite name for the class of codes used to attack various cryptosystems."
+    },
+    {
+        "file": "Space_Salvage",
+        "categoryname": "Space_Salvage",
+        "price": "185.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/space-salvage.png@<Capital_Goods>Parts from a recently damaged or destroyed vehicle can sometimes be exactly what a mechanic needs to fix a battered craft.  However more often than not, they merely require a recycling fee to dispose of."
+    },
+    {
+        "file": "Textiles",
+        "categoryname": "Textiles",
+        "price": "45.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/textiles.png@<Luxury_Goods>No matter how far technology has advanced, there will always be those who desire to the freedom to make their own kilt."
+    },
+    {
+        "file": "Weaponry",
+        "categoryname": "Weaponry",
+        "price": "285.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/weaponary.png@<Processed_Goods>While it may seem odd, given the loose nature of the laws governing what armaments may be placed on civilian ships, certain weapons, such as thermonuclear mortars, hunter-killer drones, and Anchadaen wrestling worms, are not allowed."
+    },
+    {
+        "file": "Books",
+        "categoryname": "Books",
+        "price": "45.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/books.png@<Luxury_Goods>While the manner of its conveyance has gone through countless alterations over untold millenniums, few things compare to a well crafted tale."
+    },
+    {
+        "file": "PlayThing_(tm)",
+        "categoryname": "PlayThing_(tm)",
+        "price": "18",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/plaything.png@<Luxury_Goods>If you have to ask, this terminal judges you too young to be told."
+    },
+    {
+        "file": "Brilliance",
+        "categoryname": "Contraband/Brilliance",
+        "price": "180.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/brilliance.png@<Contraband>Brilliance runners tend to make a killing off the Gemini system runs; of course, unless they are killed in the process."
+    },
+    {
+        "file": "Slaves",
+        "categoryname": "Contraband/Slaves",
+        "price": "650.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/slaves.png@<Contraband>Illegal due to fears of inter-species domination, among a plethora of other reasons, economic inefficiencies looming largest of all.",
+        "passenger": true,
+        "slave": true
+    },
+    {
+        "file": "Pilot",
+        "categoryname": "Contraband/Pilot",
+        "price": "650.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/slaves.png@<Contraband>Much as you may hate the pilot of the ship that attempted to destroy yours, destroying that pilot's ship does not grant one, under interstellar law, the right to sell said pilot into slavery. That being said, many have been known to do just that.",
+        "passenger": true,
+        "slave": true
+    },
+    {
+        "file": "Tobacco",
+        "categoryname": "Contraband/Tobacco",
+        "price": "90.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/tobacco.png@<Contraband>The tobacco plant, native to Terra, is the source of the pesticide Nicotine. Tobacco leaves, when cured and burned, release the addictive pesticide, along with numerous carcinogens. So far, no species other than humanity has been stupid enough to use this as a drug."
+    },
+    {
+        "file": "Ultimate",
+        "categoryname": "Contraband/Ultimate",
+        "price": "950.5",
+        "mass": "0.01",
+        "volume": "1",
+        "description": "@cargo/ultimate.png@<Contraband>Produced by a genetically engineered hybrid of Terran and Xeno flora, the F62 variant of the extract of the seeds of the Khaisal plant induces a prolonged state of euphoria in humans. While the extract is not not intrinsically toxic, it is highly addictive, and therefore illegal in most places."
+    },
+    {
+        "file": "gothri",
+        "categoryname": "starships/Deprecated",
+        "price": "2500000",
+        "mass": "132",
+        "volume": "2700",
+        "description": "<Ships/Report_Bug>The Kilrathi Gothri can pose a very real threat to any ship in the Gemini Sector.  With its impressive acceleration, it can reach high velocities. When you are facing a Gorthri in combat, you should concentrate on its weak armor.  A few well placed concentrated bursts of gunfire can severely damage this fighter.  However, it is not that easy to close on it.  The Gothri is very maneuverable and can easily down you first with its array of blasters."
+    },
+    {
+        "file": "dralthi",
+        "categoryname": "starships/Deprecated",
+        "price": "1400000",
+        "mass": "197",
+        "volume": "4000",
+        "description": "<Ships/Report_Bug>Most Kilrathi fighters emphasize high velocity and maneuverability, since nearly all Kilrathi pilots rely on aggressive combat strategies. The Dralthi is no exception. With excellent acceleration powers and powerful afterburners, its high velocity allows a Kilrathi pilot to close in on his kill quickly and efficiently. One thing to keep in mind before catching up with your target is that the Dralthi's firepower is rather weak."
+    },
+    {
+        "file": "kamekh",
+        "categoryname": "starships/Deprecated",
+        "price": "8000000",
+        "mass": "216",
+        "volume": "4400",
+        "description": "<Ships/Report_Bug>If you are flying missions in the Clarke Quadrant, you are apt to encounter the Kamekh sooner or later.  This imposing capital ship with its strong armor and heavy weapons loadout is one of the most impressively designed spacecraft in the Gemini sector.  The Kamekh is not only equipped with a sophisticated arsenal of guns ranging from meson blasters to plasma cannons, but it can also effectively down enemy ships with its multiple missiles.  Refer to Survival Tips for effective attack strategies against capital ships."
+    },
+    {
+        "file": "salthi",
+        "categoryname": "starships/Retro",
+        "price": "400000",
+        "mass": "216",
+        "volume": "4400",
+        "description": "<Ships/Kilrathi_Retro>The Retros, being by their nature not given to grand industrialization, rely on a small number of hidden facilities and sympathetic manufacturing plants to supply them with ships. The Salthi bears the distinction of being the only class of spacecraft officially sanctioned by the reverend Jones, who, when presented with its initial designs just over a year ago, said that prayer had revealed to her that that this was to be the 'shepherds crook' by which man's sins would be constrained. Inexpensive, even at the time of its introduction, the Salthi remains a utilitarian craft well suited to the production schedules of backwater worlds."
+    },
+    {
+        "file": "tarsus.blank",
+        "categoryname": "starships/Merchant/Light",
+        "price": "28000",
+        "mass": "250",
+        "volume": "1500",
+        "description": "<Ships/Merchant>The mainstay of the Exploratory Services fleet just a few years ago, these steady craft are now a familiar part of the private enterprise. The tarsus has been discontinued.  We list it here because of its popularity and general availability in the used markets."
+    },
+    {
+        "file": "tarsus.begin",
+        "categoryname": "starships/Used",
+        "price": "18000",
+        "mass": "250",
+        "volume": "1500",
+        "description": "<Ships/Merchant>The mainstay of the Exploratory Services fleet just a few years ago, these steady craft are now a familiar part of the private enterprise. The tarsus has been discontinued.  We list it here because of its popularity and general availability in the used markets."
+    },
+    {
+        "file": "galaxy.blank",
+        "categoryname": "starships/Merchant/Medium",
+        "price": "150000",
+        "mass": "325",
+        "volume": "7500",
+        "description": "<Ships/Merchant>A versatile merchant's vessel, the Galaxy is perfect for those with an entrepreneurial spirit.  She is by no means a military vessel, but a Galaxy can usually protect herself and the large amount of cargo she's able to carry."
+    },
+    {
+        "file": "centurion.blank",
+        "categoryname": "starships/Hunter/Medium",
+        "price": "200000",
+        "mass": "40",
+        "volume": "1000",
+        "description": "<Ships/Hunter>This is the workhorse of the mercenary community. The centurion is a heavy fighter with the ability to do almost any gun-for-hire work. The limited cargo hold can contain more than an overnight bag, but not by much.  This is a ship for those pilots who love to fly, but it won't make you a living on the trade circuit."
+    },
+    {
+        "file": "orion.blank",
+        "categoryname": "starships/Hunter/Heavy",
+        "price": "125000",
+        "mass": "40",
+        "volume": "1000",
+        "description": "<Ships/Hunter>The orion is perhaps the safest of all vehicles.  It can carry the most armor and shields of all ships in the Gemini sector (at the expense of its maneuverability). This is a sturdy ship, designed to last."
+    },
+    {
+        "file": "kukhri.blank",
+        "categoryname": "starships/Militia/Medium",
+        "price": "100000",
+        "mass": "140",
+        "volume": "1500",
+        "description": "<Ships/Report_Bug>The Kukhri was the product of a joint Confed & Merchant guild effort to update the Gladius and strengthen militia forces.  Featuring better gun placement, higher speed and additional missiles this variant can hold its own even against the most advanced Kilrathi fighters."
+    },
+    {
+        "file": "grikath.blank",
+        "categoryname": "starships/Hunter/Heavy",
+        "price": "2500000",
+        "mass": "27",
+        "volume": "2700",
+        "description": "<Ships/Report_Bug>The Kilrathi Grikath is no longer the premier bomber of the Empire but is still a threat with it's heavy array of neutron guys and proton torpedos"
+    },
+    {
+        "file": "devship",
+        "categoryname": "starships/Merchant/Light",
+        "price": "1",
+        "mass": "20",
+        "volume": "1000",
+        "description": "<Ships/Report_Bug>Developer ship - not for gameplay, for testing only."
+    },
+    {
+        "file": "sabre.blank",
+        "categoryname": "starships/Hunter/Heavy",
+        "price": "375000",
+        "mass": "22",
+        "volume": "2500",
+        "description": "<Ships/Report_Bug>Sabre fighter-bombers are an excellently engineered compromise between the need to carry torpedoes and a rear turret and the maneuverability necessary to survive dogfights. Made possible by advancement in torpedo aiming assist systems. the Sabre is arguably a superior choice to the Broadsword in most strike missions."
+    }
+]

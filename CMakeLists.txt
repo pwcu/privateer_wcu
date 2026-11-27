@@ -122,6 +122,7 @@ INSTALL(FILES
     LICENSE
     Manual.pdf
     master_part_list.csv
+    master_part_list.json
     New_Game
     newsRelease.txt
     priv.icns
@@ -140,6 +141,7 @@ INSTALL(FILES
     Version.txt
     vslogo.xpm
     weapon_list.xml
+    weapons.json
     DESTINATION ${CMAKE_INSTALL_DATADIR}/pwcu
 )
 

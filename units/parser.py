@@ -1,169 +1,118 @@
-import random
+#!/usr/bin/env python3
+"""
+Convert units.csv to units.json for Vega Strike engine.
+"""
+
+import csv
 import json
+import os
 import sys
 
-line_num = 0
-column_num = 0
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+CSV_PATH = os.path.join(SCRIPT_DIR, "units.csv")
+JSON_PATH = os.path.join(SCRIPT_DIR, "units.json")
 
-open_quotes = False
-index = 0
-column = 0
-#headers = []
-line_values = []
-units = []
-unit = {}
+# Canonical column headers defined for Vega Strike / PWCU units.
+# Used for verification and as a guaranteed fallback if the CSV lacks a header row.
+DEFAULT_HEADERS = [
+    "Key", "Directory", "Name", "FoFID", "Object_Type",
+    "Combat_Role", "Textual_Description", "Hud_image", "Unit_Scale", "Cockpit",
+    "CockpitX", "CockpitY", "CockpitZ", "Mesh", "Shield_Mesh", "Rapid_Mesh", "BSP_Mesh",
+    "Use_BSP", "Use_Rapid", "Mass", "Moment_Of_Inertia", "Convex_Hull_Volume",
+    "Fuel_Capacity", "Hull", "Armor_Front_Top_Right", "Armor_Front_Top_Left",
+    "Armor_Front_Bottom_Right", "Armor_Front_Bottom_Left", "Armor_Back_Top_Right",
+    "Armor_Back_Top_Left", "Armor_Back_Bottom_Right", "Armor_Back_Bottom_Left", "Shield_Front_Top_Right",
+    "Shield_Back_Top_Left", "Shield_Front_Bottom_Right", "Shield_Front_Bottom_Left",
+    "Shield_Back_Top_Right", "Shield_Front_Top_Left", "Shield_Back_Bottom_Right",
+    "Shield_Back_Bottom_Left", "Shield_Recharge", "Shield_Leak", "Warp_Capacitor",
+    "Primary_Capacitor", "Reactor_Recharge", "Jump_Drive_Present", "Jump_Drive_Delay",
+    "Wormhole", "Outsystem_Jump_Cost", "Warp_Usage_Cost", "Afterburner_Type",
+    "Afterburner_Usage_Cost", "Maneuver_Yaw", "Maneuver_Pitch", "Maneuver_Roll",
+    "Yaw_Governor", "Pitch_Governor", "Roll_Governor", "Afterburner_Accel",
+    "Forward_Accel", "Retro_Accel", "Left_Accel", "Right_Accel", "Top_Accel",
+    "Bottom_Accel", "Afterburner_Speed_Governor", "Default_Speed_Governor", "ITTS",
+    "Radar_Color", "Can_Lock", "Radar_Range", "Tracking_Cone", "Max_Cone", "Lock_Cone", "Hold_Volume",
+    "Can_Cloak", "Cloak_Min", "Cloak_Rate", "Cloak_Energy", "Cloak_Glass", "Repair_Droid",
+    "ECM_Rating", "ECM_Resist", "Ecm_Drain", "Hud_Functionality", "Max_Hud_Functionality",
+    "Lifesupport_Functionality", "Max_Lifesupport_Functionality", "Comm_Functionality",
+    "Max_Comm_Functionality", "FireControl_Functionality", "Max_FireControl_Functionality",
+    "SPECDrive_Functionality", "Max_SPECDrive_Functionality", "Slide_Start", "Slide_End",
+    "Activation_Accel", "Activation_Speed", "Upgrades",
+    "Sub_Units", "Sounds", "Light", "Mounts", "Net_Comm", "Dock", "Cargo_Import", "Cargo",
+    "Explosion", "Equipment_Space", "Num_Animation_Stages", "Upgrade_Storage_Volume", "Heat_Sink_Rating",
+    "Shield_Efficiency", "Num_Chunks", "Chunk_0", "Collide_Subunits", "Tractorability"
+]
 
-isKahan = False
-
-headers = ["Key", "Directory",	"Name",	"FoFID", "Object_Type",
-                            "Combat_Role",	"Textual_Description",	"Hud_image",	"Unit_Scale",	"Cockpit",
-                            "CockpitX", "CockpitY",	"CockpitZ",	"Mesh",	"Shield_Mesh",	"Rapid_Mesh",	"BSP_Mesh",
-                            "Use_BSP", "Use_Rapid", "Mass",	"Moment_Of_Inertia", "Convex_Hull_Volume",
-                            "Fuel_Capacity",	"Hull", "Armor_Front_Top_Right",	"Armor_Front_Top_Left",
-                            "Armor_Front_Bottom_Right", "Armor_Front_Bottom_Left",	"Armor_Back_Top_Right",
-                            "Armor_Back_Top_Left", "Armor_Back_Bottom_Right",	"Armor_Back_Bottom_Left",	"Shield_Front_Top_Right",
-                            "Shield_Back_Top_Left",	"Shield_Front_Bottom_Right",	"Shield_Front_Bottom_Left",
-                            "Shield_Back_Top_Right",	"Shield_Front_Top_Left",	"Shield_Back_Bottom_Right",
-                            "Shield_Back_Bottom_Left",	"Shield_Recharge",	"Shield_Leak",	"Warp_Capacitor",
-                            "Primary_Capacitor",	"Reactor_Recharge",	"Jump_Drive_Present",	"Jump_Drive_Delay",
-                            "Wormhole",	"Outsystem_Jump_Cost",	"Warp_Usage_Cost",	"Afterburner_Type",
-                            "Afterburner_Usage_Cost",	"Maneuver_Yaw",	"Maneuver_Pitch",	"Maneuver_Roll",
-                            "Yaw_Governor",	"Pitch_Governor",	"Roll_Governor",	"Afterburner_Accel",
-                            "Forward_Accel",	"Retro_Accel",	"Left_Accel",	"Right_Accel",	"Top_Accel",
-                            "Bottom_Accel",	"Afterburner_Speed_Governor",	"Default_Speed_Governor",	"ITTS",
-                            "Radar_Color", "Can_Lock",	"Radar_Range",	"Tracking_Cone",	"Max_Cone", "Lock_Cone",	"Hold_Volume",
-                            "Can_Cloak",	"Cloak_Min",	"Cloak_Rate",	"Cloak_Energy",	"Cloak_Glass",	"Repair_Droid",
-                            "ECM_Rating",	"ECM_Resist",	"Ecm_Drain",	"Hud_Functionality",	"Max_Hud_Functionality",
-                            "Lifesupport_Functionality",	"Max_Lifesupport_Functionality",	"Comm_Functionality",
-                            "Max_Comm_Functionality",	"FireControl_Functionality",	"Max_FireControl_Functionality",
-                            "SPECDrive_Functionality",	"Max_SPECDrive_Functionality",	"Slide_Start",	"Slide_End",
-                            "Activation_Accel",	"Activation_Speed",	"Upgrades",
-                            "Sub_Units", "Sounds", "Light", "Mounts", "Net_Comm", "Dock", "Cargo_Import",	"Cargo",
-                            "Explosion", "Equipment_Space", "Num_Animation_Stages", "Upgrade_Storage_Volume",	"Heat_Sink_Rating",
-                            "Shield_Efficiency", "Num_Chunks", "Chunk_0", "Collide_Subunits", "Tractorability"]
-max_columns = len(headers)
-print(headers)
-
-def next_in_line(text):
-    global open_quotes
-    global index
-    global line_values
-    next_comma = line.find(",", index)
-    next_quotes = line.find("\"", index)
-    #print(f"comma:{next_comma} {next_quotes}")
-
-    # We found neither
-    if next_comma == -1 and next_quotes == -1:
-        return -1
-
-    if next_comma == -1:
-        next_comma = next_quotes + 1
-
-    elif next_quotes == -1:
-        next_quotes = next_comma + 1
-
-    if open_quotes:
-        # We must have closed quotes
-        if next_quotes == -1:
-            return -1
-
-        open_quotes = False
-        return next_quotes + 1
-
-    if next_comma < next_quotes and next_comma != -1:
-        return next_comma + 1
-
-    open_quotes = True
-    return next_quotes + 1
+KNOWN_DATA_TYPES = {"key", "string", "float", "int", "bool", "boolean", "double"}
 
 
+def is_header_row(row):
+    """Detect if row contains column headers."""
+    if not row:
+        return False
+    return row[0].strip().lower() == "key"
 
-def parseNext(text, parse_headers = False):
-    global index
-    global line_num
-    global line_values
-    global column_num
-    global max_columns
 
-    global isKahan
+def is_type_row(row):
+    """Detect if row contains column data type descriptors (e.g. String, float)."""
+    if not row:
+        return False
+    non_empty = [cell.strip().lower() for cell in row[:10] if cell.strip()]
+    if not non_empty:
+        return False
+    type_matches = sum(1 for cell in non_empty if cell in KNOWN_DATA_TYPES)
+    return (type_matches / len(non_empty)) >= 0.5
 
-    line_values = []
-    previous_index = index
-    index = next_in_line(text)
 
-    if parse_headers:
-        return
+def convert_units():
+    if not os.path.exists(CSV_PATH):
+        print(f"Error: {CSV_PATH} not found", file=sys.stderr)
+        sys.exit(1)
 
-    if column_num == max_columns -1:
-        key = headers[column_num]
-        value = text[previous_index:].strip()
-        index = -1
-        if len(value) > 0:
-            unit[key] = value
+    with open(CSV_PATH, mode="r", newline="", encoding="utf-8", errors="replace") as f:
+        reader = csv.reader(f)
+        try:
+            first_row = next(reader)
+        except StopIteration:
+            print(f"Error: {CSV_PATH} is empty", file=sys.stderr)
+            sys.exit(1)
+
+        # Check if first row is a header row or data
+        if is_header_row(first_row):
+            headers = [h.strip() for h in first_row if h.strip()]
+            # If the parsed header count doesn't match canonical headers, fallback to canonical
+            if len(headers) != len(DEFAULT_HEADERS):
+                print(f"Warning: Header count mismatch ({len(headers)} vs expected {len(DEFAULT_HEADERS)}). Falling back to canonical headers.")
+                headers = DEFAULT_HEADERS
+            data_rows = reader
         else:
-            unit[key] = ''
+            # First row is data, use canonical headers
+            print("Notice: Header row not detected in CSV; applying canonical default headers.")
+            headers = DEFAULT_HEADERS
+            data_rows = [first_row] + list(reader)
 
-        #print("Error column_num is too big")
-        #sys.exit()
-        return
+        units = []
+        for row in data_rows:
+            if not row or is_type_row(row):
+                continue
 
-    key = headers[column_num]
-    value = text[previous_index:index-1].strip()
+            # Skip rows without a Key or with empty key (prevents engine crashes)
+            key = row[0].strip() if len(row) > 0 else ""
+            if not key:
+                continue
 
-    if key == 'Key' and value == 'Kahan.blank':
-        isKahan = True
-    if key == 'Key' and value != 'Kahan.blank':
-        isKahan = False
+            unit = {}
+            for header, val in zip(headers, row):
+                val_clean = val.strip()
+                if val_clean:
+                    unit[header] = val_clean
+            units.append(unit)
 
-    if isKahan:
-        print(f"{line_num} {index} {column_num} key={key} value={value}")
+    with open(JSON_PATH, mode="w", encoding="utf-8") as f:
+        json.dump(units, f, indent=4)
 
-    if len(value) > 0:
-        unit[key] = value
-    else:
-        unit[key] = ''
-    #print(f"{line_num}:{index} {open_quotes} {value}")
-
-def parseLine(text):
-    global index
-    global column_num
-    global unit
-    global units
-
-    column_num = 0
-    index = 0
-    unit = {}
-
-    values = text.split(',')
-
-    i = 0
-
-    while i < max_columns :
-        if len(values[i]) > 0:
-            unit[headers[i]] = values[i]
-        i += 1
-
-    units.append(unit)
+    print(f"Successfully converted {len(units)} units from {CSV_PATH} to {JSON_PATH}")
 
 
-with open("units_pipe.csv", "r") as units_file:
-    lines = units_file.readlines()
-    for line in lines:
-        if line_num == 0:
-            pass
-        elif line_num == 1:
-            pass
-        elif line_num == len(lines) - 1:
-            pass
-        else:
-            line = line.strip()
-            parseLine(line)
-
-        line_num +=1
-
-json_object = json.dumps(units, indent = 4)
-with open("units.json", "w") as json_file:
-    json_file.write(json_object)
-print(json_object)
-#print(json_object[523])
-
+if __name__ == "__main__":
+    convert_units()
