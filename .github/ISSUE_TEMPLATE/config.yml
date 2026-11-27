@@ -1,8 +1,11 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Ask the Community on Gitter
+  - name: Ask the PWCU Community on Matrix / Gitter
+    url: https://matrix.to/#/#vegastrike_pwcu:gitter.im
+    about: Join the Privateer: WCU Community Discussion (vegastrike/pwcu)
+  - name: Vega Strike Engine Community on Gitter
     url: https://gitter.im/vegastrike/community
-    about: Join the Vega Strike Gitter Discussion
+    about: Join the Vega Strike Engine Gitter Discussion
   - name: Vega Strike Forums
     url: https://forums.vega-strike.org/
     about: Join the Vega Strike Forums

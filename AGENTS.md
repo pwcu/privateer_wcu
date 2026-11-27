@@ -124,4 +124,5 @@ Always commit both the source file (`.csv`/`.xml`) and the generated `.json` fil
 ## When in doubt
 
 Consult existing reference implementations in [`vegastrike/Assets-Production`](https://github.com/vegastrike/Assets-Production)
-or [`vegastrike/vsu-black-paralysis`](https://github.com/vegastrike/vsu-black-paralysis), or ask on the pull request.
+or [`vegastrike/vsu-black-paralysis`](https://github.com/vegastrike/vsu-black-paralysis), ask on the pull request,
+or chat with the developers on [Matrix / Gitter (`#vegastrike_pwcu:gitter.im`)](https://matrix.to/#/#vegastrike_pwcu:gitter.im).
