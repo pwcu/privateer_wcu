@@ -1,0 +1,14 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ask the PWCU Community on Matrix / Gitter
+    url: https://matrix.to/#/#vegastrike_pwcu:gitter.im
+    about: Join the Privateer: WCU Community Discussion (vegastrike/pwcu)
+  - name: Vega Strike Engine Community on Matrix / Gitter
+    url: https://matrix.to/#/#vegastrike_community:gitter.im
+    about: Join the Vega Strike Engine Discussion (vegastrike/community)
+  - name: Vega Strike Forums
+    url: https://forums.vega-strike.org/
+    about: Join the Vega Strike Forums
+  - name: Vega Strike Official Wiki
+    url: https://wiki.vega-strike.org/
+    about: Read up at the Vega Strike Wiki
