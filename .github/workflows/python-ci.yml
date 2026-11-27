@@ -1,0 +1,37 @@
+name: Python-CI
+
+permissions:
+  contents: read
+  pull-requests: read
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  validate:
+    name: Validate Python and Asset Data
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile Python modules (syntax and warnings check)
+        run: |
+          echo "Compiling all Python files with -W error..."
+          python3 -W error -m py_compile $(find bases modules tools script -name "*.py")
+
+      - name: Verify asset data conversion
+        run: |
+          echo "Running data conversion pipeline..."
+          ./script/convert_data.py
+          echo "Verifying no unstaged diffs in generated JSON manifests..."
+          git diff --exit-code units/units.json weapons.json master_part_list.json

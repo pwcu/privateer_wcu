@@ -81,6 +81,22 @@ To change the Priv:WCU configuration options, navigate to the Priv:WCU folder
 and type `bin/vegasettings --target ./` `<ENTER>`
 
 
+Quick Flight Controls & Gameplay Guide
+--------------------------------------
+
+- **Steering:** Arrow keys
+- **Target Navigational Points:** `n`
+- **Autopilot to Destination:** `a`
+- **Target Spaceships:** `t`
+- **Lock Target:** `l` (requires locking-capable radar)
+- **Fire Weapons:** `Spacebar`
+- **Accelerate / Afterburners:** `Tab`
+- **Landing / Docking:** Fly directly into base hangar bay, or press `d`
+- **Jump to Another System:** Press `j` inside a blue jump point (requires a Jump Drive purchased under the upgrade computer)
+- **Damage Report:** `r`
+- **Trading:** Buy low, sell high (for example, buy raw ores at mining bases and trade at industrial or agricultural stations)
+
+
 Forking
 -------
 
@@ -96,8 +112,8 @@ History
 
   Privateer: Wing Comander Universe has its roots in the Privateer:
 Parallel Universe mod (which itself is a continuation of the
-Privateer Remake project, the history of which is too long to include
-here), but also includes content from the Privateer: Gemini Gold mod
+Privateer Remake project, including Privateer Remake 1.2 released in 2005),
+but also includes content from the Privateer: Gemini Gold mod
 (as close to a 1:1 remake of the original Privateer on the VegaStrike
 engine as one is likely to get) and the Wing Commander Universe project,
 which itself spawned the Privateer Remake project.
