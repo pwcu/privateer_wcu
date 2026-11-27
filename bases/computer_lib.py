@@ -373,10 +373,10 @@ class QuineComputer:
     #line editor callback
     def saveNameEntryEntered(self,textbox):
         # this is a bit awkward, mostly since we have to emulate modal behaviour through state machines...
-        if textbox.getText() is not '' and textbox.canceled is False:
+        if textbox.getText() != '' and textbox.canceled is False:
             savename = textbox.getText()
-            if savename in savelist() and savename is not self.oldSaveName:
-                if savename is not self.lastEnteredSavegameName:
+            if savename in savelist() and savename != self.oldSaveName:
+                if savename != self.lastEnteredSavegameName:
                     self.txt_screen.setText( 'warning: overwriting another game with the same name\n' +
                           'press Enter again to really do it')
                     return

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-""" Simple vector rotation functions
+r""" Simple vector rotation functions
 
     This little script was designed for use when aligning ships with the
     landing pads in Privateer: Wing Commander Universe

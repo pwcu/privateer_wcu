@@ -65,7 +65,7 @@ def LookupRealName(oldname,faction):
 class NewsTranslator:
     """Provides functions that handle the translation of a
     news item using a relevant event tuple."""
-    STARDATE_TEXT = "\\\\\\\This story first broadcast on: "
+    STARDATE_TEXT = "\\\\\\\\This story first broadcast on: "
 
     def __init__(self, dynamic_data):
         self.dynamic_data = dynamic_data

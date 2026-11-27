@@ -9,7 +9,9 @@ global traverser
 traverser=[]
 
 def isType(a,typ):
-    return a.__init__.im_func==typ.__init__.im_func
+    a_func = getattr(a.__init__, '__func__', getattr(a.__init__, 'im_func', a.__init__))
+    typ_func = getattr(typ.__init__, '__func__', getattr(typ.__init__, 'im_func', typ.__init__))
+    return a_func == typ_func
 
 exnonescript=None
 
@@ -39,11 +41,13 @@ def IsEnd(node):
         if (len(node.preconditions)!=1):
             return False
     except:
-        debug.info("node: "+node)
-        debug.info("dir(node): "+dir(node))
-        debug.info("node.preconditions: ")+node.preconditions)
+        debug.info("node: "+str(node))
+        debug.info("dir(node): "+str(dir(node)))
+        debug.info("node.preconditions: "+str(node.preconditions))
 # Ignore this, don't try and replace it with isinstance because it won't work!
-    if (node.preconditions[0].__init__.im_func!=precond.__init__.im_func):
+    node_func = getattr(node.preconditions[0].__init__, '__func__', getattr(node.preconditions[0].__init__, 'im_func', node.preconditions[0].__init__))
+    precond_func = getattr(precond.__init__, '__func__', getattr(precond.__init__, 'im_func', precond.__init__))
+    if (node_func != precond_func):
         return False
     return node.preconditions[0].system==precond.system and node.preconditions[0].dockedshipname==precond.dockedshipname
 

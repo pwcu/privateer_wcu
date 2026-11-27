@@ -114,7 +114,7 @@ class quest_isowing(quest.quest):
 
     def Begin(self):
         self.begin = 1
-        self.respaw n= 0
+        self.respawn = 0
         if (self.isPersistent()):
             self.won = 1
             self.names = self.recoverShipTypes()

@@ -41,7 +41,7 @@ class XGUIPythonScript:
         self.code = compile(code,filename,'exec')
 
     def execute(self,context):
-        exec self.code in context
+        exec(self.code, context)
         return context
 
 
@@ -65,6 +65,6 @@ class XGUIPythonScriptAPI:
 """                                                                """
 """----------------------------------------------------------------"""
 
-def XGUIInit()
+def XGUIInit():
     XGUIRootSingleton = XGUIRoot()
 
